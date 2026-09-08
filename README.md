@@ -55,13 +55,16 @@ CREATE TABLE "ROLE_USER"
     id_user_roleuser integer NOT NULL,
     id_role_roleuser integer NOT NULL,
     CONSTRAINT role_user_pkey PRIMARY KEY (id_user_roleuser,id_role_roleuser)
-);```
+);
+```
 
-4. Creacion tabla "ROLE":
+4. Creacion tabla "ROLE"
+
 ```sql
 CREATE TABLE "ROLE"
 (
     id_role serial NOT NULL,
     name_role character varying(20) NOT NULL,
     CONSTRAINT role_pkey PRIMARY KEY (id_role)
-);```
+);
+```
