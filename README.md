@@ -23,7 +23,7 @@ CREATE DATABASE "InmobiliariaDB"
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False
 );
-```sql
+```
 
 2. Creacion tabla "USER"
 
