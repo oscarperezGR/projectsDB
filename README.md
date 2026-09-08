@@ -23,5 +23,23 @@ Respuesta escrita a las preguntas de análisis.
     IS_TEMPLATE = False;
 );
 
+2. Creacion tabla USER:
+```sql
+CREATE TABLE "USER"
+(
+    id_user serial NOT NULL,
+    num_docu_user character varying(30) NOT NULL,
+    type_docu_user character varying(20) NOT NULL,
+    name_user character varying(100) NOT NULL,
+    lastname_user character varying(100) NOT NULL,
+    birthyear_user integer NOT NULL,
+    gender_user character varying(20) NOT NULL,
+    mail_user character varying(150) NOT NULL,
+    phone_user character varying(20),
+    country_resi_user integer,
+    status_user boolean NOT NULL,
+    CONSTRAINT user_pkey PRIMARY KEY (id_user),
+    CONSTRAINT user_mail_user_key UNIQUE (mail_user)
+);
 
 
