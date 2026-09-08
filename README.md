@@ -12,18 +12,21 @@ El script de sus consultas SQL (todo debe hacerse con lenguaje SQL, no de manera
 Respuesta escrita a las preguntas de análisis.
 
 1.Creacion de base de datos
+
 ```sql
-'''CREATE DATABASE "InmobiliariaDB"
+CREATE DATABASE "InmobiliariaDB"
 (
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
     LOCALE_PROVIDER = 'libc'
     CONNECTION LIMIT = -1
-    IS_TEMPLATE = False;
+    IS_TEMPLATE = False
 );
 
-2. Creacion tabla USER:
+
+2. Creacion tabla "USER"
+
 ```sql
 CREATE TABLE "USER"
 (
@@ -40,6 +43,16 @@ CREATE TABLE "USER"
     status_user boolean NOT NULL,
     CONSTRAINT user_pkey PRIMARY KEY (id_user),
     CONSTRAINT user_mail_user_key UNIQUE (mail_user)
+);
+
+3. Creacion tabla "ROLE_USER"
+
+```sql
+CREATE TABLE "ROLE_USER"
+(
+    id_user_roleuser integer NOT NULL,
+    id_role_roleuser integer NOT NULL,
+    CONSTRAINT role_user_pkey PRIMARY KEY (id_user_roleuser,id_role_roleuser)
 );
 
 
