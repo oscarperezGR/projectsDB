@@ -23,7 +23,7 @@ CREATE DATABASE "InmobiliariaDB"
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False
 );
-
+```sql
 
 2. Creacion tabla "USER"
 
@@ -44,6 +44,8 @@ CREATE TABLE "USER"
     CONSTRAINT user_pkey PRIMARY KEY (id_user),
     CONSTRAINT user_mail_user_key UNIQUE (mail_user)
 );
+```
+
 
 3. Creacion tabla "ROLE_USER"
 
