@@ -12,10 +12,7 @@ El script de sus consultas SQL (todo debe hacerse con lenguaje SQL, no de manera
 Respuesta escrita a las preguntas de análisis.
 
 1.Creacion de base de datos
-
-
-
-2. ```sql
+```sql
 '''CREATE DATABASE "InmobiliariaDB"
 (
     WITH
@@ -25,4 +22,6 @@ Respuesta escrita a las preguntas de análisis.
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 );
+
+
 
