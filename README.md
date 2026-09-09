@@ -210,3 +210,16 @@ CREATE TABLE "ROOM_REVIEW"
     CONSTRAINT room_review_pkey PRIMARY KEY (id_roomreview)
 );
 ```
+14. Creacion tabla "USER_REVIEW"
+```sql
+CREATE TABLE "USER_REVIEW"
+(
+    id_userreview serial NOT NULL,
+    id_booking_userreview integer NOT NULL,
+    rate_userreview integer NOT NULL,
+    desc_userreview character varying(500),
+    CONSTRAINT user_review_pkey PRIMARY KEY (id_userreview)
+);
+```
+
+
