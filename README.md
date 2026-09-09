@@ -111,4 +111,14 @@ CREATE TABLE public."TOWN"
     PRIMARY KEY (id_town)
 );
 ```
+5. Creacion tabla "NEIGHBORHOOD"
+```sql
+CREATE TABLE "NEIGHBORHOOD"
+(
+    id_neighbor serial NOT NULL,
+    id_town_neighbor integer NOT NULL,
+    name_neighbor character varying(100) NOT NULL,
+    CONSTRAINT neighborhood_pkey PRIMARY KEY (id_neighbor)
+);
+```
 
