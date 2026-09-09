@@ -160,3 +160,21 @@ CREATE TABLE "POST"
     CONSTRAINT post_pkey PRIMARY KEY (id_post)
 );
 ```
+
+10. Creacion tabla "BOOKING"
+```sql
+CREATE TABLE "BOOKING"
+(
+    id_booking serial NOT NULL,
+    id_user_booking integer NOT NULL,
+    id_post_booking integer NOT NULL,
+    datetime_booking timestamp NOT NULL,
+    pay_method_booking integer NOT NULL,
+    start_date_booking date NOT NULL,
+    end_date_booking date NOT NULL,
+    pay_confirm_booking boolean,
+    status_booking character varying(20) NOT NULL,
+    CONSTRAINT booking_pkey PRIMARY KEY (id_booking)
+);
+```
+
