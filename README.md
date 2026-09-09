@@ -198,3 +198,15 @@ CREATE TABLE "PAY_METHOD"
     CONSTRAINT pay_method_pkey PRIMARY KEY (id_pay)
 );
 ```
+13. Creacion tabla "ROOM_REVIEW"
+```sql
+CREATE TABLE "ROOM_REVIEW"
+(
+    id_roomreview serial NOT NULL,
+    id_booking_roomreview integer NOT NULL,
+    rate_room_roomreview integer NOT NULL,
+    rate_owner_roomreview integer NOT NULL,
+    desc_roomreview character varying(500),
+    CONSTRAINT room_review_pkey PRIMARY KEY (id_roomreview)
+);
+```
