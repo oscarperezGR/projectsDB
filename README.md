@@ -68,3 +68,35 @@ CREATE TABLE "ROLE"
     CONSTRAINT role_pkey PRIMARY KEY (id_role)
 );
 ```
+
+5. Creacion tabla "ROOM"
+````sql
+
+CREATE TABLE  "ROOM"
+(
+    id_room serial NOT NULL,
+    id_owner_room integer NOT NULL,
+    town_room integer NOT NULL,
+    neibor_room integer NOT NULL,
+    address_room character varying(50) NOT NULL,
+    postal_room integer NOT NULL,
+    floor_room integer NOT NULL,
+    size_room integer NOT NULL,
+    bed_qty_room integer NOT NULL,
+    capacity_room integer NOT NULL,
+    gender_allowed_room character varying(20) NOT NULL,
+    closet_room integer NOT NULL,
+    bath_room boolean NOT NULL,
+    pivaty_bath_room boolean NOT NULL,
+    balcony_room boolean NOT NULL,
+    aircon_room boolean NOT NULL,
+    wifi_room boolean NOT NULL,
+    kitchen_allowed_room boolean NOT NULL,
+    visit_allowed_room boolean NOT NULL,
+    smoke_room boolean NOT NULL,
+    pet_room boolean NOT NULL,
+    utilities_incl_room boolean NOT NULL,
+    status_room character varying(20) NOT NULL,
+    PRIMARY KEY (id_room)
+);
+```
