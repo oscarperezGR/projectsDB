@@ -133,3 +133,16 @@ CREATE TABLE "EDU_CENTER"
     CONSTRAINT edu_center_pkey PRIMARY KEY (id_edu)
 );
 ```
+8. Creacion tabla "ENROLLMENT"
+```sql
+CREATE TABLE "ENROLLMENT"
+(
+    id_enroll serial NOT NULL,
+    id_user_enroll integer NOT NULL,
+    id_educenter_enroll integer NOT NULL,
+    attach_enroll character varying(255),
+    exp_date_enroll date,
+    CONSTRAINT enrollment_pkey PRIMARY KEY (id_enroll)
+);
+```
+
