@@ -221,5 +221,21 @@ CREATE TABLE "USER_REVIEW"
     CONSTRAINT user_review_pkey PRIMARY KEY (id_userreview)
 );
 ```
-
-
+15. Creacion tabla "PREFERENCE"
+```sql
+CREATE TABLE "PREFERENCE"
+(
+    id_user_pref integer NOT NULL,
+    pet_owner_pref boolean,
+    smoke_pref boolean,
+    aircon_pref boolean,
+    wifi_pref boolean,
+    bath_pref boolean,
+    closet_pref boolean,
+    kitchen_pref boolean,
+    balcony_pref boolean,
+    visit_allow_pref boolean,
+    utilities_incl_pref boolean,
+    CONSTRAINT preference_pkey PRIMARY KEY (id_user_pref)
+);
+```
