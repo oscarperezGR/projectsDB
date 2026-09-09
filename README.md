@@ -177,4 +177,24 @@ CREATE TABLE "BOOKING"
     CONSTRAINT booking_pkey PRIMARY KEY (id_booking)
 );
 ```
+11. Creacion tabla "COUNTRY"
+```sql
+CREATE TABLE "COUNTRY"
+(
+    id_country serial NOT NULL,
+    name_country character varying(100) NOT NULL,
+    CONSTRAINT country_pkey PRIMARY KEY (id_contry)
+);
+```
 
+12. Creacion tabla "PAY_METHOD"
+```sql
+CREATE TABLE "PAY_METHOD"
+(
+    id_pay serial NOT NULL,
+    name_pay character varying(50) NOT NULL,
+    type_pay character varying(50) NOT NULL,
+    status_pay boolean NOT NULL,
+    CONSTRAINT pay_method_pkey PRIMARY KEY (id_pay)
+);
+```
