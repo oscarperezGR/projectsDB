@@ -111,7 +111,7 @@ CREATE TABLE public."TOWN"
     PRIMARY KEY (id_town)
 );
 ```
-5. Creacion tabla "NEIGHBORHOOD"
+6. Creacion tabla "NEIGHBORHOOD"
 ```sql
 CREATE TABLE "NEIGHBORHOOD"
 (
@@ -121,4 +121,15 @@ CREATE TABLE "NEIGHBORHOOD"
     CONSTRAINT neighborhood_pkey PRIMARY KEY (id_neighbor)
 );
 ```
-
+7. Creacion tabla "EDU_CENTER"
+```sql
+CREATE TABLE "EDU_CENTER"
+(
+    id_edu serial NOT NULL,
+    town_edu integer NOT NULL,
+    name_edu character varying(150) NOT NULL,
+    address_edu character varying(200) NOT NULL,
+    type_edu character varying(50) NOT NULL,
+    CONSTRAINT edu_center_pkey PRIMARY KEY (id_edu)
+);
+```
