@@ -145,4 +145,18 @@ CREATE TABLE "ENROLLMENT"
     CONSTRAINT enrollment_pkey PRIMARY KEY (id_enroll)
 );
 ```
-
+9. Creacion tabla "POST"
+```sql
+CREATE TABLE "POST"
+(
+    id_post serial NOT NULL,
+    id_publisher_post integer NOT NULL,
+    id_room_post integer NOT NULL,
+    datetime_post timestamp NOT NULL,
+    min_period_post integer,
+    monthly_price_post numeric(10,2) NOT NULL,
+    deposit_price_post numeric(10,2),
+    status_post character varying(20) NOT NULL,
+    CONSTRAINT post_pkey PRIMARY KEY (id_post)
+);
+```
