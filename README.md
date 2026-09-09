@@ -70,7 +70,7 @@ CREATE TABLE "ROLE"
 ```
 
 5. Creacion tabla "ROOM"
-````sql
+```sql
 
 CREATE TABLE  "ROOM"
 (
@@ -100,3 +100,15 @@ CREATE TABLE  "ROOM"
     PRIMARY KEY (id_room)
 );
 ```
+
+5. Creacion tabla "TOWN"
+```sql
+CREATE TABLE public."TOWN"
+(
+    id_town serial NOT NULL,
+    name_town character varying(30) NOT NULL,
+    province_town character varying(30) NOT NULL,
+    PRIMARY KEY (id_town)
+);
+```
+
